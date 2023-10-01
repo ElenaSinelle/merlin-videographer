@@ -13,23 +13,30 @@
     body {
       font-family: 'AR One Sans', sans-serif;
       font-family: 'Exo 2', sans-serif;
+      color: #2F4F4F;
+    }
+    a {
+      text-decoration: none;
+      cursor: pointer;
+      color: #2F4F4F;
     }
 
   </style>
 </head>
 
 <body style="display: grid; grid-template-rows: 3;">
-  <header style="background-color: #B0C4DE;">
-    <figure class="logo">
-      <img src="https://www.svgrepo.com/show/452952/cat.svg" alt="Merlin Logo" width="30">
-      <figcaption>Videographer Merlin</figcaption>
+  <header style="background-color: #B0C4DE; display: flex; justify-content: space-between;">
+    <figure style="display: flex; gap: 20px;">
+      <img src="https://www.svgrepo.com/show/452952/cat.svg" alt="Merlin Logo" width="20">
+      <figcaption style="font-weight: 700;"><a href="#">Videographer Merlin</a></figcaption>
     </figure>
-    <nav>
-      <ul>
-        <li>About me</li>
-        <li>My videos</li>
-        <li>My photos</li>
-        <li>My news</li>
+    <nav style="margin-right: 40px;">
+      <ul style="list-style: none; display: flex; gap: 20px;">
+        <li><a href="#about">About me</a></li>
+        <li><a href="#videos">My videos</a></li>
+        <li><a href="#photos">My photos</a></li>
+        <li><a href="#news">My news</a></li>
+        <li><a href="#contacts">Contats</a></li>
       </ul>
     </nav>
   </header>
@@ -41,6 +48,8 @@
         <h1>About me</h1>
         <p>I am Merlin the Cat. This site is about my passion - videography. I love filming beauty of the world. And I hope you will enjoy it with me.</p>
         <p>I am an IT professional and it is what I do for a living. You can visit my <a>home-page</a> and my <a>work-page</a></a></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </section>
 
       <section id="videos">
@@ -90,7 +99,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="news">
         <h2>My news</h2>
         <article>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -112,7 +121,7 @@
 
   </div>
 
-  <footer style="background-color: rgba(176, 196, 222, 0.8);">
+  <footer id="contacts" style="background-color: rgba(176, 196, 222, 0.8);">
     <div>
       <p>&copy; Videographer Merlin</p>
       <p><a>Merlin The Cat</a></p>
