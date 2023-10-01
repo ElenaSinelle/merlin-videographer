@@ -14,11 +14,12 @@
       font-family: 'AR One Sans', sans-serif;
       font-family: 'Exo 2', sans-serif;
     }
+
   </style>
 </head>
 
-<body>
-  <header>
+<body style="display: grid; grid-template-rows: 3;">
+  <header style="background-color: #B0C4DE;">
     <figure class="logo">
       <img src="https://www.svgrepo.com/show/452952/cat.svg" alt="Merlin Logo" width="30">
       <figcaption>Videographer Merlin</figcaption>
@@ -33,8 +34,74 @@
     </nav>
   </header>
 
-  <main>
-    <aside>
+  <div style="display: grid; grid-template-columns: 5fr 1fr;">
+    <main style="background-color: rgba(176, 196, 222, 0.3);">
+
+      <section id="about">
+        <h1>About me</h1>
+        <p>I am Merlin the Cat. This site is about my passion - videography. I love filming beauty of the world. And I hope you will enjoy it with me.</p>
+        <p>I am an IT professional and it is what I do for a living. You can visit my <a>home-page</a> and my <a>work-page</a></a></p>
+      </section>
+
+      <section id="videos">
+        <h2>My latest videos</h2>
+        <div>
+          <iframe width="525" height="300"
+            src="https://www.youtube.com/embed/CxwJrzEdw1U?si=QXyBWTCLzcLt3vkw"
+            title="YouTube video player Norway"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+
+          <iframe width="525" height="300"
+            src="https://www.youtube.com/embed/3t2Cjxbkxdk?si=pNJInVVJumJD-6fb"
+            title="YouTube video player Scotland"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+
+      <section id="photos">
+        <h2>I am also fond of making photos</h2>
+        <div style="display: flex; flex-flow: row wrap; gap: 60px;">
+          <div style="width: 500px; height: 300px; overflow: hidden;">
+            <img src="https://media.istockphoto.com/id/494611794/photo/view-on-bruges.jpg?s=612x612&w=0&k=20&c=haYLhV6Ul_MlA1kmdWU-jDbtpaffYdTHOD_N3CwE10A="
+            alt="Norway in winter"
+            width="500">
+          </div>
+
+          <div style="width: 500px; height: 300px; overflow: hidden;">
+            <img src="https://www.state.gov/wp-content/uploads/2018/11/Norway-2560x1328.jpg"
+            alt="Norway in summer"
+            width="600">
+          </div>
+
+          <div style="width: 500px; height: 300px; overflow: hidden;">
+            <img src="https://s27363.pcdn.co/wp-content/uploads/2020/05/Scotland-Itinerary.jpg.optimal.jpg"
+            alt="Scotland"
+            width="600">
+          </div>
+
+          <div style="width: 500px; height: 300px; overflow: hidden;">
+            <img src="https://i0.wp.com/infinitescotland.com/wp-content/uploads/2020/04/Glencoe-in-winter-scaled.jpg?resize=1800%2C1200&ssl=1" alt="Scotland in winter"
+            width="500">
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>My news</h2>
+        <article>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </article>
+        <article>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </article>
+      </section>
+    </main>
+
+    <aside style="background-color: rgba(176, 196, 222, 0.5);">
       <h3>What is videography</h3>
       <p>Videography is the art of making video films.</p>
       <p>Videography includes different styles of videos such as brand documentary, business explainer, wedding videography and drone videography.</p>
@@ -43,73 +110,9 @@
       <p>While it can appear as simple as shooting a video on your smartphone, videography involves a complex set of skills in every step of the process, from creative planning, setup, filming, editing and promotion. It's important to develop a foundational videography skill set to become a videographer.</p>
     </aside>
 
-    <section id="about">
-      <h1>About me</h1>
-      <p>I am Merlin the Cat. This site is about my passion - videography. I love filming beauty of the world. And I hope you will enjoy it with me.</p>
-      <p>I am an IT professional and it is what I do for a living. You can visit my <a>home-page</a> and my <a>work-page</a></a></p>
-    </section>
+  </div>
 
-    <section id="videos">
-      <h2>My latest videos</h2>
-      <div>
-        <iframe width="525" height="300"
-          src="https://www.youtube.com/embed/CxwJrzEdw1U?si=QXyBWTCLzcLt3vkw"
-          title="YouTube video player Norway"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
-
-        <iframe width="525" height="300"
-          src="https://www.youtube.com/embed/3t2Cjxbkxdk?si=pNJInVVJumJD-6fb"
-          title="YouTube video player Scotland"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
-      </div>
-    </section>
-
-    <section id="photos">
-      <h2>I am also fond of making photos</h2>
-      <div style="display: flex; flex-flow: row wrap; gap: 60px;">
-        <div style="width: 500px; height: 300px; overflow: hidden;">
-          <img src="https://media.istockphoto.com/id/494611794/photo/view-on-bruges.jpg?s=612x612&w=0&k=20&c=haYLhV6Ul_MlA1kmdWU-jDbtpaffYdTHOD_N3CwE10A="
-          alt="Norway in winter"
-          width="500">
-        </div>
-
-        <div style="width: 500px; height: 300px; overflow: hidden;">
-          <img src="https://www.state.gov/wp-content/uploads/2018/11/Norway-2560x1328.jpg"
-          alt="Norway in summer"
-          width="600">
-        </div>
-
-        <div style="width: 500px; height: 300px; overflow: hidden;">
-          <img src="https://s27363.pcdn.co/wp-content/uploads/2020/05/Scotland-Itinerary.jpg.optimal.jpg"
-          alt="Scotland"
-          width="600">
-        </div>
-
-        <div style="width: 500px; height: 300px; overflow: hidden;">
-          <img src="https://i0.wp.com/infinitescotland.com/wp-content/uploads/2020/04/Glencoe-in-winter-scaled.jpg?resize=1800%2C1200&ssl=1" alt="Scotland in winter"
-          width="500">
-        </div>
-      </div>
-
-
-    </section>
-
-    <section>
-      <h2>My news</h2>
-      <article>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </article>
-      <article>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </article>
-    </section>
-  </main>
-
-  <footer>
+  <footer style="background-color: rgba(176, 196, 222, 0.8);">
     <div>
       <p>&copy; Videographer Merlin</p>
       <p><a>Merlin The Cat</a></p>
