@@ -10,6 +10,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500;700&family=Exo+2:wght@200&display=swap" rel="stylesheet">
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       font-family: 'AR One Sans', sans-serif;
       font-family: 'Exo 2', sans-serif;
@@ -20,7 +23,6 @@
       cursor: pointer;
       color: #2F4F4F;
     }
-
   </style>
 </head>
 
@@ -42,7 +44,7 @@
   </header>
 
   <div style="display: grid; grid-template-columns: 5fr 1fr;">
-    <main style="background-color: rgba(176, 196, 222, 0.3);">
+    <main style="background-color: rgba(176, 196, 222, 0.3); padding-left: 40px; padding-right: 20px;">
 
       <section id="about">
         <h1>About me</h1>
@@ -54,15 +56,15 @@
 
       <section id="videos">
         <h2>My latest videos</h2>
-        <div>
-          <iframe width="525" height="300"
+        <div style="display: flex; justify-content: space-between;">
+          <iframe width="380" height="220"
             src="https://www.youtube.com/embed/CxwJrzEdw1U?si=QXyBWTCLzcLt3vkw"
             title="YouTube video player Norway"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen>
           </iframe>
 
-          <iframe width="525" height="300"
+          <iframe width="380" height="220"
             src="https://www.youtube.com/embed/3t2Cjxbkxdk?si=pNJInVVJumJD-6fb"
             title="YouTube video player Scotland"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -73,40 +75,45 @@
 
       <section id="photos">
         <h2>I am also fond of making photos</h2>
-        <div style="display: flex; flex-flow: row wrap; gap: 60px;">
-          <div style="width: 500px; height: 300px; overflow: hidden;">
+        <div style="display: flex; flex-flow: row wrap; row-gap: 60px; justify-content: space-between;">
+          <div style="width: 380px; height: 220px; overflow: hidden;">
             <img src="https://media.istockphoto.com/id/494611794/photo/view-on-bruges.jpg?s=612x612&w=0&k=20&c=haYLhV6Ul_MlA1kmdWU-jDbtpaffYdTHOD_N3CwE10A="
             alt="Norway in winter"
-            width="500">
+            width="400">
           </div>
 
-          <div style="width: 500px; height: 300px; overflow: hidden;">
+          <div style="width: 380px; height: 220px; overflow: hidden;">
             <img src="https://www.state.gov/wp-content/uploads/2018/11/Norway-2560x1328.jpg"
             alt="Norway in summer"
-            width="600">
+            width="450">
           </div>
 
-          <div style="width: 500px; height: 300px; overflow: hidden;">
+          <div style="width: 380px; height: 220px; overflow: hidden;">
             <img src="https://s27363.pcdn.co/wp-content/uploads/2020/05/Scotland-Itinerary.jpg.optimal.jpg"
             alt="Scotland"
-            width="600">
+            width="450">
           </div>
 
-          <div style="width: 500px; height: 300px; overflow: hidden;">
+          <div style="width: 380px; height: 220px; overflow: hidden;">
             <img src="https://i0.wp.com/infinitescotland.com/wp-content/uploads/2020/04/Glencoe-in-winter-scaled.jpg?resize=1800%2C1200&ssl=1" alt="Scotland in winter"
-            width="500">
+            width="400">
           </div>
         </div>
       </section>
 
       <section id="news">
-        <h2>My news</h2>
-        <article>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </article>
-        <article>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </article>
+        <h2 style="margin-bottom: 0;">My news</h2>
+        <div style="display: flex; gap: 60px;">
+          <article>
+            <h3>Latest News</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </article>
+          <article>
+            <h3>Oldest News</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </article>
+        </div>
+
       </section>
     </main>
 
